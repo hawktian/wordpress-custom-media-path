@@ -6,7 +6,7 @@ A WordPress Plugin for custom images saved path and name etc.
 这是一款WordPress系统的插件；
 插件的功能是自定义图片上传的目录和名称；
 
-## 为什么开发这个插件？
+## 插件功能
 由于系统默认的图片上传地址是/wp-content/uploads,
 然后下面是年份目录，再下面月份目录，
 这样的目录结构，一个月内上传的文件都存储在一个目录下面，
@@ -16,5 +16,5 @@ A WordPress Plugin for custom images saved path and name etc.
 避免了因图片名称含有特殊字符导致的WordPress功能问题。
 
 
-## 更多内容：
-http://www.wordpressmatrix.com/plugin/145/wordpress-custom-upload-folder/
+## 更多内容
+http://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
