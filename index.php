@@ -3,6 +3,8 @@
 Plugin Name: WordPress custom media upload
 Description: Custom Image saved path and name.
 Author: Tonvin Tian<itonvin@gmail.com>
+Plugin URI: http://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
+Author URI: https://www.tonvin.net/
 */
 class Custom_Media_Save {
     public function __construct() {
