@@ -3,8 +3,10 @@
 A WordPress Plugin for custom images saved path and name etc.
 
 ## 介绍：
-这是一款WordPress系统的插件；
-插件的功能是自定义图片上传的目录和名称；
+这是一款WordPress系统的插件, 通过此插件可以：
+自定义图片上传的目录和名称；
+自定义上传的图片返回的域名，比如图片使用了不同于www主机的域名；
+
 
 ## 插件功能
 由于系统默认的图片上传地址是/wp-content/uploads,
@@ -17,4 +19,4 @@ A WordPress Plugin for custom images saved path and name etc.
 
 
 ## 更多内容
-http://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
+https://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/

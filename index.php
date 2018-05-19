@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: WordPress custom media upload
+Plugin Name: Custom Media Upload
 Description: Custom Image saved path and name.
 Author: Tonvin Tian<itonvin@gmail.com>
-Plugin URI: http://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
+Plugin URI: https://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
 Author URI: https://www.tonvin.net/
 */
-class Custom_Media_Save {
+class Custom_Media_Upload {
     public function __construct() {
         add_filter( 'upload_dir', array($this, 'upload_dir'), 1, 1);
         add_filter( 'sanitize_file_name', array($this, 'sanitize_file_name'), 100, 1);
@@ -33,4 +33,4 @@ class Custom_Media_Save {
         return false;
     }
 }
-new Custom_Media_Save();
+new Custom_Media_Upload();
