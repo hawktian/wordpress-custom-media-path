@@ -1,10 +1,8 @@
 <?php
 /*
-Plugin Name: Custom Media Upload
-Description: Custom Image saved path and name.
+Plugin Name: Custom Media store directory and name.
+Description: Custom uploaded image saved path and name.
 Author: Tonvin Tian<itonvin@gmail.com>
-Plugin URI: https://www.wordpressmatrix.com/plugin/145/wordpress-custom-media-upload/
-Author URI: https://www.tonvin.net/
 */
 class Custom_Media_Upload {
     public function __construct() {
