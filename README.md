@@ -1,4 +1,4 @@
-# WordPress-custom-media-upload
+# WordPress custom media path
 
 ## Introduction：
 This is a plugin for the WordPress CMS,
