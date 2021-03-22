@@ -1,11 +1,12 @@
 <?php
 /*
- * Plugin Name: WordPress-custom-media-upload
+ * Plugin Name: Custom Meida Save Directory
  * Plugin URI: https://github.com/Tonvin/wordpress-custom-media-upload
  * Description: Custom uploaded medias saved directory and name.
  * Author: Tonvin Tian<itonvin@gmail.com>
  * Author URI: https://tonvin.net/
  **/
+
 class Custom_Media_Upload {
     public function __construct() {
         add_filter( 'upload_dir', array($this, 'upload_dir'), 1, 1);
