@@ -1,14 +1,15 @@
 <?php
 /*
-Plugin Name: Custom Media store directory and name.
-Description: Custom uploaded image saved path and name.
-Author: Tonvin Tian<itonvin@gmail.com>
-*/
+ * Plugin Name: WordPress-custom-media-upload
+ * Plugin URI: https://github.com/Tonvin/wordpress-custom-media-upload
+ * Description: Custom uploaded medias saved directory and name.
+ * Author: Tonvin Tian<itonvin@gmail.com>
+ * Author URI: https://tonvin.net/
+ **/
 class Custom_Media_Upload {
     public function __construct() {
         add_filter( 'upload_dir', array($this, 'upload_dir'), 1, 1);
         add_filter( 'sanitize_file_name', array($this, 'sanitize_file_name'), 100, 1);
-        add_filter( 'pre_option_upload_url_path', array($this, 'custom_upload_url_path'));
     }
     public function upload_dir($config) {
         $day = date('d', time());
@@ -24,11 +25,6 @@ class Custom_Media_Upload {
         return substr(md5(time().uniqid()), 5, 10).'.'.$info['extension'];
     }
 
-    public function custom_upload_url_path( $upload_url_path ) {
-        if ( defined('UPLOAD_URL_PATH') ) {
-            return UPLOAD_URL_PATH;
-        }
-        return false;
-    }
 }
 new Custom_Media_Upload();
+
