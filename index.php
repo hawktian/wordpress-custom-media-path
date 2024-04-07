@@ -1,10 +1,9 @@
 <?php
 /*
  * Plugin Name: Custom Media Path
- * Plugin URI: https://github.com/Tonvin/wordpress-custom-media-path
+ * Plugin URI: https://github.com/hawktian/wordpress-custom-media-path
  * Description: Change medias directory and name.
- * Author: Tonvin Tian<itonvin@gmail.com>
- * Author URI: https://tonvin.net/
+ * Author: Hawk Tian<itonvin@gmail.com>
  **/
 
 class Custom_Media_Path {

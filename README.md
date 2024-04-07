@@ -1,36 +1,34 @@
 # WordPress custom media path
 
 ## Introduction：
-A plugin for WordPress,
+The plugin designed to optimize media management by restructuring the default directory organization. By default, WordPress arranges media files based on the year and month of upload, which can lead to performance bottlenecks when handling a large volume of files within a single month.
 
-As we know the default media directory structure is year/month,
+With this plugin installed, media files are automatically organized into daily directories, resulting in a hierarchical structure of year/month/day. This granular arrangement enhances file retrieval and listing efficiency, mitigating potential slowdowns associated with managing extensive media libraries.
 
-while uploading too many files in one month would slow down file search and listing,
-
-with this plugin installed, media files saved in a single daily directory,
-
-directory structure likes year/month/day.
-
-The extra feature is the file name changed contains only alpha and number.
+Furthermore, the plugin implements a filename modification feature, ensuring that filenames consist solely of alphanumeric characters. This optimization enhances file system compatibility and facilitates smoother data handling processes within the WordPress environment.
 
 ## 介绍：
 
-这是一款WordPress内容管理系统插件, 
+这是一个WordPress内容管理系统插件, 
 
 通过此插件可以自定义图片上传的目录和名称，
 
-默认的存储路径是 wp-content/uploads/年/月,
+WordPress默认的存储路径是 wp-content/uploads/year/month,
 
-这样一个月内上传的文件都存储在一个目录下面，
+这样的结构，会导致一个月份内上传的文件都存储在一个目录下面，
 
-每张图片又裁切为几张不同宽高的副本，
+当每张图片又裁切为几张不同宽高的副本时，
 
-导致文件检索和列表等操作非常慢，
+会导致文件检索和列表等操作变慢，
 
-管理和备份以起来也不方便，
+管理和备份以起来也不太方便，
 
-这个插件安装后会，文件会自动按 年/月/日 的结构存储，
+这个插件安装后会，文件会按 年/月/日 的结构存储，
 
-并将文件名称修改为只包含a-z0-9的字符，
+即在月份目录下面多添加了一层日期目录。
 
-规避因特殊字符导致的其他问题。
+另外，文件名称被设置为固定长度，
+
+并由字符集[a-z][0-9]中的字符随机组合而成，
+
+是为了规避因文件名包含特殊字符导致的潜在问题。
